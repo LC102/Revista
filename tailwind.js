@@ -11,6 +11,5 @@ module.exports = {
   },
   plugins: [
     require('flowbite/plugin'),    // Plugin de Flowbite
-    require('@tailwindcss/forms')  // Estilos para formularios (opcional)
   ]
 }
