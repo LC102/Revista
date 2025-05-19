@@ -1,23 +1,10 @@
- <?php
+<?php
 
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
+Route::view('/', 'pagina1'); 
 
-Route::get('/', function () {
-    return view('inicio');
-});
-
-Route::view('/inicio', 'pagina1'); 
+Route::view('/inicio','pagina1');
 Route::view('/noticias','nivel2.pagina2');
 Route::view('/retos','nivel2.retos');
 Route::view('/quien','nivel2.whoim');
@@ -32,3 +19,4 @@ Route::view('/cuidadoagua','nivel2.agua');
 Route::view('/contactanos','nivel2.contacto');
 Route::view('/politica','nivel2.privacidad');
 Route::view('/tallwindss','flowbite');
+
