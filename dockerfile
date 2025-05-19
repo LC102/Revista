@@ -20,6 +20,10 @@ RUN composer install --no-dev --optimize-autoloader
 # Instalar y compilar assets con Vite
 RUN npm install && npm run build
 
+# Establecer permisos para Laravel y assets
+RUN chown -R www-data:www-data /var/www/storage /var/www/bootstrap/cache /var/www/public/build
+RUN chmod -R 775 /var/www/storage /var/www/bootstrap/cache /var/www/public/build
+
 # Establecer permisos para Laravel
 RUN chown -R www-data:www-data /var/www/storage /var/www/bootstrap/cache
 RUN chmod -R 775 /var/www/storage /var/www/bootstrap/cache
