@@ -14,10 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('/inicio');
+    return view('inicio');
 });
 
-Route::view('/inicio','pagina1');
+Route::view('/inicio', 'pagina1'); 
 Route::view('/noticias','nivel2.pagina2');
 Route::view('/retos','nivel2.retos');
 Route::view('/quien','nivel2.whoim');
