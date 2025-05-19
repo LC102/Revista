@@ -18,7 +18,7 @@ return [
     |
     */
 
-    'driver' => env('SESSION_DRIVER', 'database'),
+    'driver' => env('SESSION_DRIVER', 'cookie'), // Forzar cookie incluso si .env falla
 
     /*
     |--------------------------------------------------------------------------
